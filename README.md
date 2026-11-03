@@ -71,18 +71,9 @@ No Makefile edits needed. It picks up any new `.c` file automatically.
 - `command not found: gcc`: install a compiler (on Arch: `sudo pacman -S gcc make`).
 - Warnings are not errors, but read them. They usually point at real bugs.
 
-## What each file does
+## AI assistance
 
-| File | Purpose |
-| --- | --- |
-| `01-basics/hello.c` | My first program: variables and `printf`. |
-| `Makefile` | Shortcut for compiling. Instead of typing `gcc -Wall ... file.c -o file` every time, `make run F=...` builds and runs a program. It also turns on compiler warnings (`-Wall -Wextra -Wpedantic`) to catch mistakes, and uses the C17 standard. Compiled programs go into `build/`. |
-| `.gitignore` | Tells git to skip `build/` and `output/` so only source code is saved, not compiled programs. |
-| `.clang-format` | Optional settings for the `clang-format` auto-formatter (LLVM style, 4-space indent) so code stays consistently formatted. |
-| `.editorconfig` | Makes editors use the same basics (4-space indent, UTF-8, newline at end of file; tabs only in the Makefile). |
-| `.gitattributes` | Keeps line endings as `\n` on every OS. |
-| `LICENSE` | MIT license: anyone may use or copy this code, with no warranty. |
-| `README.md` | This file: what the repo is and how to use it. |
+I write the C code myself. I use Claude for some quality-of-life extras around it, like the repo setup, the Makefile, the docs and helper scripts. Commits where Claude helped have a `Co-Authored-By` line.
 
 ## License
 
