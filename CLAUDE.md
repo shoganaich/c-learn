@@ -34,5 +34,4 @@ Claude does write the quality-of-life extras without asking: repo setup, Makefil
 
 ## Don't
 
-- Recreate `configure-remotes.sh` here. It belongs to a different repo.
 - Let the README drift. If the Makefile or workflow changes, update the README's compile/run section in the same change.
