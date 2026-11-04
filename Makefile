@@ -1,4 +1,4 @@
-CC      ?= gcc
+CC      := gcc
 CFLAGS  ?= -std=c17 -Wall -Wextra -Wpedantic -g
 
 SRCS := $(wildcard */*.c)
